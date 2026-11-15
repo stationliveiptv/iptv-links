@@ -1,4 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=2496000,CODECS="avc1.77.30,mp4a.40.2",RESOLUTION=1920x1080
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=985125&extension=m3u8
+
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio-ara",NAME="Arabic Audio",LANGUAGE="ara",DEFAULT=YES,AUTOSELECT=YES,URI="https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-2/51db9d7fa48a27d051f1eecb68069151/index.mpd?audio_language=ar&video_codec=H264&video_framerate=25-25&video_height=144-720
+"
+
+#EXT-X-STREAM-INF:BANDWIDTH=2592000,RESOLUTION=1920x1080,CODECS="avc1.42E01E,mp4a.40.2",AUDIO="audio-ara"
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-2/51db9d7fa48a27d051f1eecb68069151/index.mpd
